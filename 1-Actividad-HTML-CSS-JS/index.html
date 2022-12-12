@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO HOJA DE VIDA</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h1>FORMULARIO HOJA DE VIDA</h1>
+
+  <br>
+
+  <form>
+    <H3>DATOS PERSONALES</H3>
+
+    <div  class="clase1">
+          <label>PRIMER APELLIDO</label>
+    <input type="text" name="Apellidouno" id="Apellidouno" required>
+    <label>SEGUNDO APELLIDO</label>
+    <input type="text" name="Apellidodos" id="Apellidodos" required>
+    <label>NOMBRES</label>
+    <input type="text" name="Nombres" id="Nombres" required><br><br>
+    <label>DOCUMENTO DE IDENTIFICACIÓN</label>
+
+    <input type="radio" name="optId" value="Ciudadania" id="optC.C" checked>C.C
+    <input type="radio" name="optId" value="Extranjera" id="optC.E" >C.E
+    <input type="radio" name="optId" value="Pasaporte" id="optPAS" >PAS
+
+    <label>No.</label>
+    <input type="number" name="txtId" id="txtId" required min="0">
+
+    <label>GÉNERO</label>
+    <input type="radio" name="optGen" value="F" id="optF" >FEMENINO
+    <input type="radio" name="optGen" value="M" id="optM" >MASCULINO<br><br>
+    
+    <label>NACIONALIDAD</label>
+    <input type="radio" name="optPais" value="Ciudadania" id="optCol" checked>COL.
+    <input type="radio" name="optPais" value="Extranjera" id="optExt" >EXTRANJERO
+    <label>PAÍS</label>
+    <input type="text" name="txtId" id="txtId">
+
+    <label>Estado civil</label>
+    <select name="lstEstado" id="lstEstado">
+        <option value="1">Casado(a)</option>
+        <option value="2">Soltero(a)</option>
+        <option value="3">Union Libre</option>
+    </select><br><br>
+    
+    
+    
+    </div><br>
+    <br>
+    <div class="container">
+          <div class="c1">
+          <label>FECHA Y LUGAR DE NACIMIENTO</label><br><br>
+          <Label>FECHA</Label>
+          <input type="date" name="txtFecha" id="txtFecha" required><br><br>
+          <label>PAIS</label>
+          <input type="text" name="PaisNac" id="PaisNac"><br><br>
+          <label>DEPTO</label>
+          <input type="text" name="DeptoNac" id="DeptoNac"><br><br>
+          <label>MUNICIPIO</label>
+          <input type="text" name="MuniNac" id="MuniNac"><br><br>
+    </div>
+    <br>
+
+    <div class="c2">
+      <label>DIRECCIÓN DE CORRESPONDENCIA</label>
+      <input type="text" name="Direccion" id="Direccion"><br><br>
+      <label>PAIS</label>
+      <input type="text" name="PaisDir" id="PaisDir">
+      <label>DEPTO</label>
+      <input type="text" name="DeptoDir" id="DeptoDir"><br><br>
+      <label>MUNICIPIO</label>
+      <input type="text" name="MuniNac" id="MuniNac">
+      <label >TELÉFONO</label>
+      <input type="number" name="Telefono" id="Telefono" required min="0"><br><br>
+      <label>CORREO ELECTRÓNICO</label>
+      <input type="email" name="txtCorreo" id="txtCorreo" required placeholder="nombre@dominio">
+    </div>
+
+    </div>
+    <hr>
+    
+    <br>
+
+    <H3>FORMACIÓN ACADÉMICA</H3>
+    <div class="formacion">
+      <h5>EDUCACIÓN BÁSICA Y MEDIA</h5>
+      <p>SELECCIONE EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DE
+        EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</p>
+        
+      
+      <input type="radio" name="optEdu" value="Primaria" id="optPri">PRIMARIA
+      <input type="radio" name="optEdu" value="Secundaria" id="optSec" >SECUNDARIA
+      <input type="radio" name="optEdu" value="Media" id="optMed" >MEDIA
+      
+        <select name="Grado" id="Grado">
+          <option value="1">1o.</option>
+          <option value="2">2o.</option>
+          <option value="3">3o.</option>
+          <option value="4">4o.</option>
+          <option value="5">5o.</option>
+          <option value="6">6o.</option>
+          <option value="7">7o.</option>
+          <option value="8">8o.</option>
+          <option value="9">9o.</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+        </select>
+      <label>TITULO OBTENIDO</label>
+      <input type="text" name="Titulo" id="Titulo">
+      
+      <label>FECHA DE GRADO</label>
+      <input type="date" name="txtFecha" id="txtFecha" required>   
+      
+      <br>
+
+      <h5>EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)</h5>
+      <p>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:
+        TC (TÉCNICA), TL (TECNOLÓGICA), TE (TECNOLÓGICA ESPECIALIZADA), UN (UNIVERSITARIA),
+        ES (ESPECIALIZACIÓN), MG (MAESTRÍA O MAGISTER), DOC (DOCTORADO O PHD),
+        RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN UNA LEY).</p>
+        <br>
+        
+        <label>MODALIDAD ACADÉMICA</label>
+        <input type="text" name="Modalidad" id="Modalidad"> 
+
+        <label>No. SEMESTRES APROBADOS</label>
+        <input type="number" name="Semestre" id="Semestre" required min="1">
+
+        <label>GRADUADO</label>
+        <input type="radio" name="optGrd" value="Si" id="optSi" >SI
+        <input type="radio" name="optGrd" value="No" id="optNo" >NO<br><br>
+
+        <label>TÍTULO OBTENIDO</label>
+        <input type="text" name="TituloOb" id="TituloOb"> 
+
+        <label>TERMINACIÓN</label>
+        <input type="date" name="FechaTer" id="FechaTer" required>
+
+        <label>No. DE TARJETA PROFESIONAL</label>
+        <input type="number" name="Tarjeta" id="Tarjeta" required min="1">
+
+        <br>
+
+        <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (R), BIEN (B) O MUY BIEN (MB)</p>
+        <br>
+        <label>IDIOMA</label>
+        <input type="text" name="Idioma" id="Idioma"> 
+        <label>FORMA</label>
+            <select name="lsIdioma" id="lsIdioma">
+                <option value="R">REGULAR</option>
+                <option value="B">BIEN</option>
+                <option value="MB">MUY BIEN</option>
+            </select><br><br>
+            <label>ANEXOS</label>
+            <input type="file" name="anexo" id="anexo">
+      <br><br>      
+    </div><hr><br>
+
+
+    <H3>EXPERIENCIA LABORAL</H3>
+    <div class="experiencia">
+      <h5>EMPLEO ACTUAL O CONTRATO VIGENTE</h5>
+      <label>EMPRESA O ENTIDAD</label>
+      <input type="text" name="EmpAct" id="EmpAct"> 
+
+      <input type="radio" name="EmpTipo" value="Publica" id="optPul" >PÚBLICA
+      <input type="radio" name="EmpTipo" value="Privada" id="optPri" >PRIVADA
+
+
+      <label>PAIS</label>
+      <input type="text" name="PaisEm" id="PaisEm"> <br><br>
+
+      <label>DEPARTAMENTO</label>
+      <input type="text" name="DepEm" id="DePEm"> 
+
+      <label>MUNICIPIO</label>
+      <input type="text" name="MunEm" id="MunEm"><br><br>
+      
+      <label for="">CORREO ELECTRÓNICO ENTIDAD</label> 
+      <input type="email" name="CorreoEmp" id="CorreoEmp" placeholder="nombre@dominio">
+      <label >TELÉFONO</label>
+      <input type="number" name="TelEmp" id="TelEmp" >
+
+      <label>FECHA DE INGRESO</label>
+      <input type="date" name="FechaIng" id="FechaIng"><br><br>
+
+      <label>CARGO O CONTRATO ACTUAL</label>
+      <input type="text" name="Cargo" id="Cargo"><hr>
+
+
+      <h5>EMPLEO O CONTRATO ANTERIOR</h5>
+      <label>EMPRESA O ENTIDAD</label>
+      <input type="text" name="EmpAnt" id="EmpAnt"> 
+
+      <input type="radio" name="EmpTipo" value="Publica" id="optPul" >PÚBLICA
+      <input type="radio" name="EmpTipo" value="Privada" id="optPri" >PRIVADA
+
+
+      <label>PAIS</label>
+      <input type="text" name="PaisEm" id="PaisEm"> <br><br>
+
+      <label>DEPARTAMENTO</label>
+      <input type="text" name="DepEm" id="DePEm"> 
+
+      <label>MUNICIPIO</label>
+      <input type="text" name="MunEm" id="MunEm"><br><br>
+      
+      <label for="">CORREO ELECTRÓNICO ENTIDAD</label> 
+      <input type="email" name="CorreoEmp" id="CorreoEmp" placeholder="nombre@dominio">
+      <label >TELÉFONO</label>
+      <input type="number" name="TelEmp" id="TelEmp" ><br><br>
+
+      <label>FECHA DE INGRESO</label>
+      <input type="date" name="FechaIng" id="FechaIng">
+
+      <label>FECHA DE RETIRO</label>
+      <input type="date" name="FechaRet" id="FechaRet">
+
+      <label>CARGO O CONTRATO</label>
+      <input type="text" name="Cargo" id="Cargo">
+
+
+      <h5>EMPLEO O CONTRATO ANTERIOR</h5>
+      <label>EMPRESA O ENTIDAD</label>
+      <input type="text" name="EmpAnt" id="EmpAnt"> 
+
+      <input type="radio" name="EmpTipo" value="Publica" id="optPul" >PÚBLICA
+      <input type="radio" name="EmpTipo" value="Privada" id="optPri" >PRIVADA
+
+
+      <label>PAIS</label>
+      <input type="text" name="PaisEm" id="PaisEm"> <br><br>
+
+      <label>DEPARTAMENTO</label>
+      <input type="text" name="DepEm" id="DePEm"> 
+
+      <label>MUNICIPIO</label>
+      <input type="text" name="MunEm" id="MunEm"><br><br>
+      
+      <label for="">CORREO ELECTRÓNICO ENTIDAD</label> 
+      <input type="email" name="CorreoEmp" id="CorreoEmp" placeholder="nombre@dominio">
+      
+      <label >TELÉFONO</label>
+      <input type="number" name="TelEmp" id="TelEmp" ><br><br>
+
+      <label>FECHA DE INGRESO</label>
+      <input type="date" name="FechaIng" id="FechaIng">
+
+      <label>FECHA DE RETIRO</label>
+      <input type="date" name="FechaRet" id="FechaRet"> 
+
+      <label>CARGO O CONTRATO</label>
+      <input type="text" name="Cargo" id="Cargo">
+      <br><br>
+
+    </div><hr><br>
+    
+    
+    <H3>TIEMPO TOTAL DE EXPERIENCIA</H3>
+    <div class="tiempo">
+    <p>INDIQUE EL TIEMPO TOTAL DE SU EXPERIENCIA LABORAL EN NÚMERO DE AÑOS Y MESES.</p>
+
+    <table border="1">
+      <tr>
+        <th rowspan="2">OCUPACIÓN</th>
+        <th colspan="2">TIEMPO DE EXPERIENCIA</th>
+      </tr>
+      <tr>
+        <th>AÑOS</th>
+        <th>MESES</th>
+      </tr>
+      <tr>
+        <td>SERVIDOR PÚBLICO</td>
+        <td><input type="number" min="0"></td>
+        <td><input type="number" min="0"></td>
+      </tr>
+        <tr>
+        <td>EMPLEADO DEL SECTOR PRIVADO</td>
+        <td><input type="number" min="0"></td>
+        <td><input type="number" min="0"></td>
+      </tr>
+      <tr>
+        <td>TRABAJADOR INDEPENDIENTE</td>
+        <td><input type="number" min="0"></td>
+        <td><input type="number" min="0"></td>
+      </tr>
+      <tr>
+        <th>TOTAL TIEMPO EXPERIENCIA</th>
+        <td><input type="number" min="0"></td>
+        <td><input type="number" min="0"></td>
+      </tr>
+    </table><br>
+
+    </div>
+
+    <hr>
+    <br>
+    <h3>OBSERVACIONES DEL JEFE DE RECURSOS HUMANOS Y/O CONTRATOS</h3>
+
+    <div class="observacion">
+      <textarea name="" id="" cols="90" rows="10"></textarea><br><br>
+      <input type="checkbox" name="chkCasa" id="chkCasa" value="S">CERTIFICO QUE LA INFORMACIÓN AQUÍ SUMINISTRADA HA SIDO CONSTATADA FRENTE A LOS 
+      DOCUMENTOS QUE HAN SIDO PRESENTADOS COMO SOPORTE. <br>
+    </div><hr><br>
+    
+    <input class="btn" type="submit" value="Guardar">
+    <input class="btn" type="reset" value="Limpiar">
+
+    <br><br>
+
+  </form>
+
+  <hr>
+  <footer class="blockquote-footer text-center">
+    <address>
+        <p class="lead">LEIDY PATRICIA ARTEAGA<br>LUIS DIEGO AGREDA<br>OMAR DAVID APRAEZ</p>
+    </address>
+  </footer>
+  
+</body>
+</html>
