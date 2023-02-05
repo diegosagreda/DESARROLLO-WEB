@@ -24,7 +24,8 @@ def calculadora (request):
             respuesta = int(numero1) * int(numero2)
         elif operacion == "division":
             if int (numero2) != 0:
-                respuesta = int(numero1) / int(numero2)
+                respuesta =round ((int(numero1) / int(numero2)),2)
+                print(respuesta)
             else:
                 respuesta = "Division por cero"
         else:
